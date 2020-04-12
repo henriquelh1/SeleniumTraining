@@ -32,6 +32,16 @@ public class CreateAccount {
 		driver.findElement(By.id("passwd")).sendKeys("123456");
 		
 		new Select(driver.findElement(By.id("days"))).selectByValue("11");
+		new Select(driver.findElement(By.id("months"))).selectByValue("1");
+		new Select (driver.findElement(By.id("years"))).selectByValue("2010");
+		driver.findElement(By.id("newsletter")).click();
+		
+		driver.findElement(By.id("address1")).sendKeys("Rua Steet");
+		driver.findElement(By.id("city")).sendKeys("Manaus");
+		new Select(driver.findElement(By.id("id_state"))).selectByValue("2");
+		driver.findElement(By.id("postcode")).sendKeys("23456");
+		driver.findElement(By.id("phone_mobile")).sendKeys("507987234");
+		driver.findElement(By.id("alias")).sendKeys("HAHAHHAHA");
 	}
 	
 	
