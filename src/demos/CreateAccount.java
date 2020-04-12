@@ -42,6 +42,7 @@ public class CreateAccount {
 		driver.findElement(By.id("postcode")).sendKeys("23456");
 		driver.findElement(By.id("phone_mobile")).sendKeys("507987234");
 		driver.findElement(By.id("alias")).sendKeys("HAHAHHAHA");
+		System.out.println("asihishdish");
 	}
 	
 	
