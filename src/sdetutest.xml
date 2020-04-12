@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="SDET University suites">
+  <test name="HomePage Tests">
+    <classes>
+      <class name="smoketests.ATagTest"/>
+      <class name="smoketests.LoginPresentTestNG"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
