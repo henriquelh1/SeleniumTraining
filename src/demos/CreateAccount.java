@@ -8,12 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class CreateAccount {
-		
+	
 	public static void main (String[] args) {
-		
-		
-		System.setProperty("webdriver.chrome.driver", "C:\\Software\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver;
+		String browser ="Chrome";
+		driver = utilities.DriverFactory.open(browser);
 		
 		//URL
 		driver.get("http://automationpractice.com/index.php?");
