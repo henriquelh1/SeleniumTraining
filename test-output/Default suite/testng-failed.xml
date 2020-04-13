@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="smoketests.LoginPresentTestNG">
+      <class name="tests.LoginDDT">
         <methods>
-          <include name="loginElementsPresentTest"/>
+          <include name="setUp"/>
+          <include name="loginTest" invocation-numbers="0 1 2 3"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- smoketests.LoginPresentTestNG -->
+      </class> <!-- tests.LoginDDT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
