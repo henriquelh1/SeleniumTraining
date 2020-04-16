@@ -17,7 +17,7 @@ public class LoginDDT {
 		// System.out.println("New Record: "+name+ " " + email + " "+password);
 		
 
-		
+		driver = utilities.DriverFactory.open("chrome");
 		//URL
 		driver.get("http://automationpractice.com/index.php?");
 		
